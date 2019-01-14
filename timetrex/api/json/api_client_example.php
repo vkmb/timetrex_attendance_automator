@@ -2,9 +2,9 @@
 /*
  Global variables
 */
-$TIMETREX_URL = 'http://192.168.59.203:8085/api/json/api.php';
-$TIMETREX_USERNAME = 'mithun';
-$TIMETREX_PASSWORD = 'qwerty1234';
+$TIMETREX_URL = 'http://host:port/api/json/api.php';
+$TIMETREX_USERNAME = 'user';
+$TIMETREX_PASSWORD = 'password';
 
 //Build URL given a Class and Method to call.
 //Format is: http://demo.timetrex.com/api/json/api.php?Class=<CLASS>&Method=<METHOD>&SessionID=<SessionID>
@@ -107,7 +107,7 @@ echo "Session ID: $TIMETREX_SESSION_ID<br>\n";
 //
 $arguments = array( 'filter_data' => array(
 													//'id' => array(1023,11353)
-													'user_name' => 'mithun',
+													'user_name' => 'employee_name',
 											)
 					);
 $user_data = postToURL( buildURL( 'APIUser', 'getUser' ), array( $arguments ) );
