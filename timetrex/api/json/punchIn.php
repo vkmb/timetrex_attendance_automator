@@ -3,9 +3,9 @@
  Global variables
 */
 date_default_timezone_set('Asia/Calcutta');
-$TIMETREX_URL = 'http://192.168.59.203:8085/api/json/api.php';
-$TIMETREX_USERNAME = 'mithun';
-$TIMETREX_PASSWORD = 'qwerty1234';
+$TIMETREX_URL = 'http://host:port/api/json/api.php';
+$TIMETREX_USERNAME = 'user';
+$TIMETREX_PASSWORD = 'password';
 function buildURL( $class, $method, $session_id = FALSE ) {
 	global $TIMETREX_URL, $TIMETREX_SESSION_ID;
 	$url = $TIMETREX_URL.'?Class='.$class.'&Method='.$method;
