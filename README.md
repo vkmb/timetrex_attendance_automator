@@ -4,15 +4,15 @@ Timetrex Attendance Automator for Linux based systems using Crontab
 
 ### note: There is a catch in the newer versions.The user need to have administrative access to automate it. So do some social engineering ; ) before getting your hands dirty.
 
-# To edit crontab -e do as follows
+### To edit crontab file do as follows
 
 1.Open terminal.
 
 2.Type "crontab -e" (By default it opens in VIM) , to change to nano "export VISUAL=nano; crontab -e" do this.
 
-## -> A little detour 
+#### -> A little detour 
 #### Crontab file spec
-##### Procedure * * * * * script to be executed
+##### * * * * * script to be executed
 ##### | | | | |_ denotes the day with respect to week
 ##### | | | |___ denotes the month
 ##### | | |_____ denotes the day with respect to month
